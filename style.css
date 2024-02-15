@@ -14,19 +14,20 @@ button {
     background: transparent;
     border: 0;
 }
-.startButton, .resetButton{
+.startButton, .resetButton {
     border: none; /* No border */
     outline: 1px solid black;
     background-color: #C8C1B7;
     border-radius: 10%;
     text-align: center; /* Center the text */
     text-decoration: none; /* Remove underline */
-    display: inline-block; /* Display as inline-block to center horizontally */
+    display: inline-block; /* Display as inline-block to place them in a row */
     font-size: 16px; /* Font size */
-    margin: 40px auto; /* Add margin for spacing */
+    margin: 40px 10px; /* Add margin for spacing between buttons */
+    transform: translateX(1150%);
     cursor: pointer; /* Add cursor pointer on hover */
-    display: block;
-}
+  }
+  
 
 .ball {
     width: 33.33333%;
