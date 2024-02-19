@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>This is a Simple Shell Game</h1>
+    <h1>This is a Super Simple Shell Game</h1>
 
     <p>Score: <span class="score-element">0</span></p> <!--span has no meaning, just divid the element from the other-->
 
@@ -61,6 +61,7 @@
             } else {
                 alert('Wrong!'); // You can replace this with your logic for an incorrect guess
                 score --;
+                score = Math.max(0, score - 1);
                 scoreElement.innerText = score;
                 // Restart the game
                 startGame();
